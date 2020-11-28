@@ -1,0 +1,65 @@
+{%extends "main/base.html"%}
+{%load static%}
+{%block content%}
+
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+  <li data-target="#slides" data-slide-to="0" class="active"></li>
+  <li data-target="#slides" data-slide-to="1"></li>
+  <li data-target="#slides" data-slide-to="2"></li>
+</ul>
+<div class="carousel-inner about">
+  <div class="carousel-item active">
+    <img src="{%static 'img/cookies4.jpg'%}">
+    <div class="carousel-caption">
+      <h1>SimplyBake</h1>
+      <h3>We Bake You Make</h3>
+    </div> 
+  </div>
+  <div class="carousel-item">
+    <img src="{%static 'img/brownies4.jpg'%}">
+    <div class="carousel-caption">
+      <h1>SimplyBake</h1>
+      <h3>We Bake You Make</h3>
+    </div> 
+  </div>
+  <div class="carousel-item">
+    <img src="{%static 'img/cookies.jpg'%}">
+    <div class="carousel-caption">
+      <h1>SimplyBake</h1>
+      <h3>We Bake You Make</h3>
+    </div> 
+  </div>
+</div>
+</div>
+
+
+<!--- Product display -->
+
+<div class="container-fluid container">
+<div class="row text-center padding">
+  <div class="col-12 welcome">
+    <h2>Cookies</h2>
+    <p>Enjoy our simple yet delicious cookie mix</p>
+    <hr>
+  </div>
+  <div class="col-12 padding">
+    <img src="{%static 'img/cookies2.jpg'%}" class="img-fluid">
+  </div>
+</div>
+</div>
+
+<div class="container-fluid container">
+<div class="row text-center padding">
+  <div class="col-12 welcome">
+    <h2>Brownies</h2>
+    <p>Our ready made mix of soft brownies</p>
+    <hr>
+  </div>
+  <div class="col-12 padding">
+    <img src="{%static 'img/brownies6.jpg'%}" class="img-fluid">
+  </div>
+</div>
+</div>
+{%endblock%}

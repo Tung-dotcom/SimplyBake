@@ -1,0 +1,74 @@
+{%extends "main/base.html"%}
+{%load static%}
+{%block content%}
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+  <li data-target="#slides" data-slide-to="0" class="active"></li>
+  <li data-target="#slides" data-slide-to="1"></li>
+  <li data-target="#slides" data-slide-to="2"></li>
+</ul>
+<div class="carousel-inner about">
+  <div class="carousel-item active">
+    <img src="{%static 'img/brownies5.jpg'%}">
+    <div class="carousel-caption">
+      <h1>SimplyBake</h1>
+      <h3>We Bake You Make</h3>
+    </div> 
+  </div>
+  <div class="carousel-item">
+    <img src="{%static 'img/brownies4.jpg'%}">
+    <div class="carousel-caption">
+      <h1>SimplyBake</h1>
+      <h3>We Bake You Make</h3>
+    </div> 
+  </div>
+  <div class="carousel-item">
+    <img src="{%static 'img/cookies.jpg'%}">
+    <div class="carousel-caption">
+      <h1>SimplyBake</h1>
+      <h3>We Bake You Make</h3>
+    </div> 
+  </div>
+</div>
+</div>
+
+
+<hr class="my-4">
+<div class="container-fluid padding">
+<div class="row padding">
+  <div class="col-md-12 col-lg-6">
+    <h2>Impressions Made</h2>
+    <p>As a company that has been recently founded, we plan to hit the ground running.</p>
+    <p>We're only a division of the company known as SimplyBake and specialise in jars that have all the ingredients for you to bake with, conveniently in a jar. </p>   
+    <p>Our vision is to provide personalised gifts that you can give to anyone of your family members or friends.</p>
+    <p>Press the button to learn more about what we'll be selling and follow our social media to keep updated and the bottom of the page</p>
+    <br>
+    <a href="{%url 'products'%}" class="btn btn-primary">Learn more</a>
+  </div>
+  <div class="col-lg-6">
+    <img src="{%static 'img/cookies2.jpg'%}" class="img-fluid">
+  </div>
+</div>
+</div>
+
+<div class="container-fluid padding">
+<div class="row text-center padding">
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <i class="fas fa-recycle"></i>
+    <h3>Recyling</h3>
+    <p>Our jars are made of glass so once you're finished you can either recycle them or reuse them</p>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <img src="{%static 'img/fairtrade.png'%}" class="fairtrade">
+    <h3>Fairtrade</h3>
+    <p>All ingredients are bought with the consideration of fairtrade</p>
+  </div>
+  <div class="col-sm-12 col-md-4">
+    <a href="https://www.young-enterprise.org.uk"><img src="{%static 'img/YE.png'%}"></a>
+    <p class="about">SimplyBake is part of the Young Enterprise company scheme</p>
+    <a href="https://www.young-enterprise.org.uk/programmes/company-programme/">Learn more</a>
+  </div>
+</div>
+<hr class="my-4">
+</div>
+{%endblock%}
